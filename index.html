@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web appつくるなら何を知らないといけないの？</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-markdown>
+          <script type="text/template">
+            # Web appつくるなら<br>何を知らないと<br>いけないの？
+
+            2016-12-03
+
+            fukuitech 7
+
+            株式会社spice life うなすけ
+          </script>
+        </section>
+        <section data-markdown data-background-image='img/icon.jpg'>
+          <script type="text/template">
+            ## 自己紹介
+
+            - うなすけ
+            - twitter : yu_suke1994
+            - 株式会社spice life 所属
+            - 開発部 TMIX開発担当 & インフラ部所属
+          </script>
+        </section>
+        <section data-markdown data-background-image='img/spicelife.png'>
+          <script type="text/template">
+            ## 自己紹介
+
+            - うなすけ
+            - twitter : yu_suke1994
+            - 株式会社spice life 所属
+            - 開発部 TMIX開発担当 & インフラ部所属
+          </script>
+        </section>
+        <section data-markdown data-background-image='img/tmix.png'>
+          <script type="text/template">
+            ## 自己紹介
+
+            - うなすけ
+            - twitter : yu_suke1994
+            - 株式会社spice life 所属
+            - 開発部 TMIX開発担当 & インフラ部所属
+          </script>
+        </section>
+        <section data-markdown data-background-image='img/icon.jpg'>
+          <script type="text/template">
+            ## 自己紹介
+
+            - うなすけ
+            - twitter : yu_suke1994
+            - 株式会社spice life 所属
+            - 開発部 TMIX開発担当 & インフラ部所属
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 今日話すこと
+
+            __Webアプリケーションをつくるときに__
+
+            __何の知識が必要なのか__
+
+            <small>ということ</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 今日話すこと
+
+            __Webアプリケーションをつくるときに__
+
+            __何の知識が必要なのか__
+
+            <small>なるべく特定の言語や環境によらない<br>一般的な知識を話そうと思います</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## ストーリー
+
+            あなた「Webアプリケーションをつくりたい！！！」
+
+            <small>like cookpad, proconist.net, twitter, and so on...</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 1. html
+
+            みなさんhtml書けますか？？？？？？？
+
+            <small>僕は書けません</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 1. html
+
+            ついおざなりになりがちなhtml
+
+            ちゃんとしたマークアップできる自信はありますか？
+
+            <small>[The W3C Markup Validation Service](https://validator.w3.org/)</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 2. CSS
+            
+            見た目の伴わないWebサイトに来てくれる人は
+            
+            いない！！！！
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 2. CSS
+
+            例えば [https://github.com/unasuke](https://github.com/unasuke)
+
+            | CSSあり | CSSなし |
+            | --- | --- |
+            | ![css](img/github_user_unasuke.png) | ![without css](img/github_user_unasuke_without_css.png) |
+            
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 2. CSS
+
+            CSSフレームワークを使えばデザインの手間が省ける
+
+            - [Bootstrap](http://getbootstrap.com/)
+            - [Foundation](http://foundation.zurb.com/)
+            - [Bourbon](http://bourbon.io/)
+            - [Bulma](http://bulma.io/)
+
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 3. JavaScript
+            
+            つくりたいWebアプリケーションにもよりますが
+
+            全くJavaScriptを使用しないということはごくまれなのでは
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 4. フレームワーク
+
+            Webアプリケーションをつくるための雛形や便利ツールのよせあつめ
+
+            - [Ruby on Rails(Ruby)](http://rubyonrails.org/)
+            - [CakePHP(PHP)](https://cakephp.org/jp/)
+            - [Play Framework(Java)](https://www.playframework.com/)
+            - [Django(Python)](https://www.djangoproject.com/)
+            - [Mojolicious(Perl)](http://www.mojolicious.org/)
+            - [koa(JavaScript)](http://koajs.com/)
+
+            <small>などなど</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 4. フレームワーク
+
+            フレームワークを用いない開発は
+
+            __つらい__
+
+            - 低級な操作が多くなる
+            - 脆弱性を生みがち
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 5. VCS
+
+            本質的には不要
+
+            でもこれ無しで開発するのは今時考えられない
+
+            - [git](https://git-scm.com/)
+            - [mercurial](https://www.mercurial-scm.org/)
+            - [Subversion](https://subversion.apache.org/)
+
+            <small>Vesion Control System</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 6. データベース
+
+            データを保存しておく場所
+
+            - [MySQL](https://www-jp.mysql.com/)
+            - [PostgreSQL](https://www.postgresql.org/)
+            - [SQLite](https://sqlite.org/)
+
+            <small>それぞれに特徴がある</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 7. PaaS
+
+            アプリを動かしてくれるサービス
+
+            - [heroku](https://www.heroku.com/home)
+            - [Engine Yard](http://www.engineyard.co.jp/)
+            - [IMB Bluemix](https://www.ibm.com/cloud-computing/jp/ja/bluemix/)
+            - [Microsoft Azure](https://azure.microsoft.com/ja-jp/)
+
+            <small>herokuが有名</small>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 7. PaaS
+
+            PaaSを使うことによって、様々な面倒をすっとばせる
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ここまで
+
+            程度にもよるけどほぼ必須と言っていい
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ここから
+
+            - あるとうれしい
+            - 大規模にしたいなら必要
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## データベース正規化
+
+            データベースにどのような構造でデータを格納するか
+
+            アプリケーションの拡張性などに関わってくる
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## セキュリティ
+
+            Webアプリケーションフレームワークが<br>ある程度防いでくれる
+
+            でも気をつけないと自分で脆弱性を作ってしまう
+
+            - XSS
+            - CSRF
+            - SQLインジェクション
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Linuxの知識
+
+            PaaSですっ飛ばした面倒シリーズその1
+
+            どこかのVPSなど借りて動かすなら必須
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## http server
+
+            PaaSですっ飛ばした面倒シリーズその2
+
+            - [nginx](https://nginx.org/en/)
+            - [Apache](https://httpd.apache.org/)
+            - [H2O](https://h2o.examp1e.net/)
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## インフラ
+
+            PaaSですっ飛ばした面倒シリーズその3
+
+            - 負荷分散のためにサーバーを複数台用意
+            - アプリケーションを分割する
+            - セキュリティのため外部からアクセスできない環境
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## インフラ
+
+            PaaSですっ飛ばした面倒シリーズその3
+
+            これもIaaSが最近は便利
+
+            - [Amazon Web Services](https://aws.amazon.com/jp/)
+            - [Google Cloud Platform](https://cloud.google.com/)
+            - [Microsoft Azure](https://azure.microsoft.com/ja-jp/)
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## どうでしたか
+
+            - 多くね？
+            - めんどそう
+            - やる気失せた
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## 大丈夫です
+
+            - 種類は多いけど完璧な理解は必要ない
+            - 調べながらやっていく
+            - やるき一番大事
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## やるき一番大事
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+          </script>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
